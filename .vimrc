@@ -1,4 +1,4 @@
-"not via compatible
+"not vi compatible
 set nocompatible
 filetype plugin indent on
 syntax on
@@ -27,13 +27,13 @@ set softtabstop=2
 " traditional backspace
 set backspace=indent,eol,start
 
-
 " no line wrapping
 set nowrap
 
+"start up with NERDTree
+autocmd VimEnter * NERDTree
+
+"toggle NERDTree with F3
+nmap <F3> :NERDTreeToggle<CR>
 
 execute pathogen#infect()
-
-
-
-
