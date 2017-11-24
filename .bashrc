@@ -1,13 +1,17 @@
 # ----------------
 # personal preference aliases
-
 alias mkdir='mkdir -pv'
 alias ls='ls -lvA --group-directories-first --color=auto| less'
-alias cl='clear'
+alias x='clear'
 
 # common typos
 alias cd..='cd ..'
 alias gut=git
+
+# program shortcuts
+alias be='bundle exec'
+alias ber='bundle exec rake'
+alias pa='php artisan'
 
 
 # open pwd in windows explorer
