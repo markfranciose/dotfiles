@@ -3,6 +3,8 @@
 alias mkdir='mkdir -pv'
 alias ls='ls -lvA --group-directories-first --color=auto| less'
 alias x='clear'
+alias ..=cd ..
+alias ...=cd ../..
 
 # common typos
 alias cd..='cd ..'
