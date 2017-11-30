@@ -14,6 +14,7 @@ alias gut=git
 alias be='bundle exec'
 alias ber='bundle exec rake'
 alias pa='php artisan'
+alias pas='php artisan serve'
 
 
 # open pwd in windows explorer
