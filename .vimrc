@@ -3,6 +3,10 @@ set nocompatible
 filetype plugin indent on
 syntax on
 
+"no right or lefthand scroll bars in gvim
+:set guioptions-=r
+:set guioptions-=L
+
 "better command line completion
 set wildmenu
 
