@@ -1,7 +1,8 @@
 # ----------------
 # personal preference aliases
 alias mkdir='mkdir -pv'
-alias ls='ls -lvA --group-directories-first --color=auto| less'
+alias ll='ls -lvA --group-directories-first --color=auto'
+alias l='ls -l --group-directories-first --color=auto'
 alias x='clear'
 alias ..=cd ..
 alias ...=cd ../..
