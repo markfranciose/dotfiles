@@ -5,11 +5,14 @@ alias ll='ls -lvA --group-directories-first --color=auto'
 alias l='ls -l --group-directories-first --color=auto'
 alias x='clear'
 alias ..=cd ..
-alias ...=cd ../..
+alias ...='cd ../..'
 
 # common typos
 alias cd..='cd ..'
 alias gut=git
+
+# dir shortcuts
+alias s=cd ~/.ssh
 
 # program shortcuts
 alias be='bundle exec'
