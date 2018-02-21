@@ -53,5 +53,3 @@ autocmd VimEnter * NERDTree
 
 "toggle NERDTree with F3
 nmap <F3> :NERDTreeToggle<CR>
-
-execute pathogen#infect()
