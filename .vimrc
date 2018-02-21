@@ -1,20 +1,21 @@
 "not vi compatible
 set nocompatible
-filetype plugin indent on
 syntax on
 
-""Vundle
-"set rtp=+=~/.vim/bundle/Vundle.vim
-"call vundle#begin()
+"Vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-"Plugin 'VundleVim/Vundle.vim'
-"Plugin 'scrooloose/nerdtree'
-"Plugin 'tpope/vim-fugitive'
-"Plugin 'bling/vim-airline'
-"Plugin 'airblade/vim-gitgutter'
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+Plugin 'bling/vim-airline'
+Plugin 'airblade/vim-gitgutter'
 
-"Plugin 'altercation/vim-colors-solarized'
-"call vundle#end()
+" Color Schemes
+Plugin 'altercation/vim-colors-solarized'
+call vundle#end()
+filetype plugin indent on
 
 "no right or lefthand scroll bars in gvim
 :set guioptions-=r
