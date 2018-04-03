@@ -11,6 +11,7 @@ alias ...='cd ../..'
 alias cd..='cd ..'
 alias gut=git
 alias bim=vim
+alias cim=vim
 
 # dir shortcuts
 alias s=cd ~/.ssh
