@@ -17,8 +17,11 @@ alias cim=vim
 alias s=cd ~/.ssh
 
 # program shortcuts
+alias bi='bundle install'
 alias be='bundle exec'
 alias ber='bundle exec rake'
+alias rsp='rails s --port=3500 -b=0.0.0.0'
+alias rspd='nohup rails s --port=3500 -b=0.0.0.0 &'
 alias pa='php artisan'
 alias pas='php artisan serve'
 
