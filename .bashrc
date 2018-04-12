@@ -14,7 +14,7 @@ alias bim=vim
 alias cim=vim
 
 # dir shortcuts
-alias s=cd ~/.ssh
+alias s='cd ~/.ssh'
 
 # program shortcuts
 alias bi='bundle install'
