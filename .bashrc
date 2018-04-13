@@ -1,4 +1,8 @@
 # ----------------
+# Vim as default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # personal preference aliases
 alias mkdir='mkdir -pv'
 alias ll='ls -lvA --group-directories-first --color=auto'
@@ -6,6 +10,8 @@ alias l='ls -l --group-directories-first --color=auto'
 alias x='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
+
+/usr/bin/setxkbmap -option "caps:swapescape"
 
 # common typos
 alias cd..='cd ..'
@@ -17,6 +23,7 @@ alias cim=vim
 alias s='cd ~/.ssh'
 
 # program shortcuts
+alias gs='git status'
 alias bi='bundle install'
 alias be='bundle exec'
 alias ber='bundle exec rake'
