@@ -48,6 +48,9 @@ set backspace=indent,eol,start
 " no line wrapping
 set nowrap
 
+" no bells ever
+set belloff=all
+
 "start up with NERDTree
 autocmd VimEnter * NERDTree
 
