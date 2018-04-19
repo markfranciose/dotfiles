@@ -1,6 +1,6 @@
 # ----------------
 # Vim as default editor
-export VISUAL=vim
+export VISUAL=vi
 export EDITOR="$VISUAL"
 
 # personal preference aliases
