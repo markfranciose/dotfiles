@@ -23,6 +23,7 @@ alias cim=vim
 alias s='cd ~/.ssh'
 
 # program shortcuts
+alias o='xdg-open'
 alias gs='git status'
 alias bi='bundle install'
 alias be='bundle exec'
