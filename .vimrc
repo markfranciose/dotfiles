@@ -6,15 +6,31 @@ syntax on
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" general
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'ervandew/supertab'
 
-" Color Schemes
+" additional syntax
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'elzr/vim-json'
+Plugin 'groenewege/vim-less'
+
+" color Schemes
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'tomasr/molokai'
+
+" framework / language specific
+Plugin 'tpope/vim-rails'
+
+
 call vundle#end()
+
 filetype plugin indent on
 
 "no right or lefthand scroll bars in gvim
