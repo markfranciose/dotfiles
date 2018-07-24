@@ -71,9 +71,10 @@ set belloff=all
 autocmd VimEnter * NERDTree
 
 "toggle NERDTree with F3
+nmap <F3> :NERDTreeToggle<CR>
+
+" Utlsnips bindings
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<F4>"
-
-nmap <F3> :NERDTreeToggle<CR>
 let g:UltiSnipsUsePythonVersion = 3
 

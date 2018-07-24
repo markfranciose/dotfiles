@@ -1,18 +1,38 @@
 # ----------------
+# Vim as default editor
+export VISUAL=vi
+export EDITOR="$VISUAL"
+
 # personal preference aliases
 alias mkdir='mkdir -pv'
-alias ls='ls -lvA --group-directories-first --color=auto| less'
+alias ll='ls -lvA --group-directories-first --color=auto'
+alias l='ls -l --group-directories-first --color=auto'
 alias x='clear'
-alias ..=cd ..
-alias ...=cd ../..
+alias ..='cd ..'
+alias ...='cd ../..'
+
+/usr/bin/setxkbmap -option "caps:swapescape"
 
 # common typos
 alias cd..='cd ..'
 alias gut=git
+alias bim=vim
+alias vum=vim
+alias cim=vim
+alias pgp=php
+alias ,.='./'
+
+# dir shortcuts
+alias s='cd ~/.ssh'
 
 # program shortcuts
+alias o='xdg-open'
+alias gs='git status'
+alias bi='bundle install'
 alias be='bundle exec'
 alias ber='bundle exec rake'
+alias rsp='rails s --port=3500 -b=0.0.0.0'
+alias rspd='nohup rails s --port=3500 -b=0.0.0.0 &'
 alias pa='php artisan'
 alias pas='php artisan serve'
 
