@@ -1,7 +1,37 @@
 "not vi compatible
 set nocompatible
-filetype plugin indent on
 syntax on
+
+"Vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" general
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+Plugin 'bling/vim-airline'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
+
+" additional syntax
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'elzr/vim-json'
+Plugin 'groenewege/vim-less'
+
+" color Schemes
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'tomasr/molokai'
+
+" framework / language specific
+Plugin 'tpope/vim-rails'
+
+call vundle#end()
+
+filetype plugin indent on
 
 "no right or lefthand scroll bars in gvim
 :set guioptions-=r
@@ -34,10 +64,16 @@ set backspace=indent,eol,start
 " no line wrapping
 set nowrap
 
+" no bells ever
+set belloff=all
+
 "start up with NERDTree
 autocmd VimEnter * NERDTree
 
 "toggle NERDTree with F3
-nmap <F3> :NERDTreeToggle<CR>
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsListSnippets="<F4>"
 
-execute pathogen#infect()
+nmap <F3> :NERDTreeToggle<CR>
+let g:UltiSnipsUsePythonVersion = 3
+
