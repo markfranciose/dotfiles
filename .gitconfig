@@ -17,3 +17,8 @@ email = mark.franciose@gmail.com
 	current = green reverse
 	local = blue
 	remote = green
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+
