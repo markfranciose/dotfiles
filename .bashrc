@@ -5,13 +5,19 @@ export EDITOR="$VISUAL"
 
 # personal preference aliases
 alias mkdir='mkdir -pv'
-alias ll='ls -lvA --group-directories-first --color=auto'
-alias l='ls -l --group-directories-first --color=auto'
 alias x='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
 
-/usr/bin/setxkbmap -option "caps:swapescape"
+# linux v. mac-y 
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+	/usr/bin/setxkbmap -option "caps:swapescape"
+	alias ll='ls -lvA --group-directories-first --color=auto'
+	alias l='ls -l --group-directories-first --color=auto'
+else
+	alias ll='ls -lvAh'
+	alias l='ls -l'
+fi
 
 # common typos
 alias cd..='cd ..'
