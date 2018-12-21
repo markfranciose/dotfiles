@@ -2,6 +2,9 @@
 set nocompatible
 syntax on
 
+"""
+" PLUGINS
+""""
 "Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -33,10 +36,6 @@ call vundle#end()
 
 filetype plugin indent on
 
-"no right or lefthand scroll bars in gvim
-:set guioptions-=r
-:set guioptions-=L
-
 "better command line completion
 set wildmenu
 
@@ -67,11 +66,17 @@ set nowrap
 " no bells ever
 set belloff=all
 
-"start up with NERDTree
+"""
+" NERDTree
+"""
+" start up with NERDTree
 autocmd VimEnter * NERDTree
 
-"toggle NERDTree with F3
+" toggle NERDTree with F3
 nmap <F3> :NERDTreeToggle<CR>
+
+" show dotfiles
+let NERDTreeShowHidden=1
 
 " Utlsnips bindings
 let g:UltiSnipsExpandTrigger="<tab>"
