@@ -59,4 +59,6 @@ mcd ()
 		cd -P -- "$1"
 }
 
-
+space() {
+  du -sh * | sort -hr | head -n 10
+}
