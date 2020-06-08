@@ -96,3 +96,5 @@ hg ()
 space() {
   du -sh * | sort -hr | head -n 10
 }
+
+source ~/.envs
