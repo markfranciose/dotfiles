@@ -17,13 +17,16 @@ Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'honza/vim-snippets'
 Plugin 'SirVer/ultisnips'
+Plugin 'tpope/vim-surround'
+Plugin 'ervandew/supertab'
 
 " additional syntax
 Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
+Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'elzr/vim-json'
 Plugin 'groenewege/vim-less'
+Plugin 'posva/vim-vue'
 
 " color Schemes
 Plugin 'altercation/vim-colors-solarized'
@@ -71,15 +74,17 @@ set belloff=all
 """
 " start up with NERDTree
 autocmd VimEnter * NERDTree
-
 " toggle NERDTree with F3
 nmap <F3> :NERDTreeToggle<CR>
-
 " show dotfiles
 let NERDTreeShowHidden=1
+
 
 " Utlsnips bindings
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<F4>"
 let g:UltiSnipsUsePythonVersion = 3
 
+" pick up .tsx files w/ typescript highlighting
+autocmd BufNewFile,BufRead *.tsx set syntax=typescript
+autocmd BufNewFile,BufRead *.vue set syntax=vue
