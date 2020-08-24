@@ -55,13 +55,13 @@ set smartcase
 set confirm
 
 set number
-set relativenumber
 set ruler
 
 " 2 space tabs and indents
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
+set et
 
 " traditional backspace
 set backspace=indent,eol,start
