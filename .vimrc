@@ -91,3 +91,9 @@ let g:UltiSnipsUsePythonVersion = 2
 " pick up .tsx files w/ typescript highlighting
 autocmd BufNewFile,BufRead *.tsx set syntax=typescript
 autocmd BufNewFile,BufRead *.vue set syntax=vue
+
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+
+" highlight chars past column 80
+highlight ColorColumn ctermbg=yellow ctermfg=red
+call matchadd('ColorColumn', '\%>80v', 100)
