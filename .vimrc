@@ -2,6 +2,9 @@
 set nocompatible
 syntax on
 
+" allow Alt + J for snippet expand
+execute "set <M-j>=\ej"
+
 """
 " PLUGINS
 """"
@@ -81,9 +84,9 @@ let NERDTreeShowHidden=1
 
 
 " Utlsnips bindings
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsListSnippets="<F4>"
-let g:UltiSnipsUsePythonVersion = 3
+let g:UltiSnipsExpandTrigger="<A-j>"
+let g:UltiSnipsListSnippets="<s-tab>"
+let g:UltiSnipsUsePythonVersion = 2
 
 " pick up .tsx files w/ typescript highlighting
 autocmd BufNewFile,BufRead *.tsx set syntax=typescript
