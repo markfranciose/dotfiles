@@ -97,3 +97,7 @@ nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 " highlight chars past column 80
 highlight ColorColumn ctermbg=yellow ctermfg=red
 call matchadd('ColorColumn', '\%>80v', 100)
+
+" dots to designate trailing whitespace
+" set listchars=trail:~
+" set list
